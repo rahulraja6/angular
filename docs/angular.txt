@@ -1,0 +1,93 @@
+npm install -g @angular/cli
+ng new my-app
+ng serve --open
+
+npm install -g typescript
+
+-g global
+
+angular 5 supports typescript@2.4.2
+
+
+Yarn replacement for npm
+Yarn Caches package it downloads
+
+npm uninstall -g @angular/cli
+npm uninstall -g angular-cli
+
+npm cache clean
+
+npm install -g @angular/cli@1.5.3
+
+Peer Dependency
+npm install -g yarn
+
+
+Install Angular Material and Angular CDK (Component Development Kit)
+
+npm install --save @angular/material @angular/cdk
+yarn add @angular/material @angular/cdk
+
+Animation Support
+BrowserAnimationModule
+npm install --save @angular/animations
+
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+
+If you don't want to add another dependency to your project, you can use the NoopAnimationsModule.
+As the name noop ("no operation") says, that module doesn't do anything. It is a utility module that mocks the real animation module but doesn't actually animate.
+
+This can be handy on platforms where animation would be too slow, or for unit testing, if animation isn't involved in what you actually want to test.
+
+Create a module
+ng 	g m material --dry-run
+ng 	g m shared\material --flat
+
+To avoid creating a folder, make use of the flat option ng g component plainsight/some-name --flat and it will generate the files without making a new folder
+
+ng s -o
+
+include theme
+
+gesture support mat-slide-toggle, mat-slider, matTooltip
+npm install --save hammerjs
+
+import at entry point main.js
+import 'hammerjs';
+
+add material icons in index.html
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+change css to scss
+
+angular.json
+
+"projects": {
+    "ngapp": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": { "@schematics/angular:component": {
+        "styleext": "scss"
+      }
+    },
+
+styles{
+styles.scss
+}
+
+rename files
+
+Layout:
+Flex layout with toolbar , sidenav
+
+
+Routing
+ng g m demo\demo --flat --routing
+
+No spec
+ng g c demo/flexbox --no-spec --dry-run
+
+Installing Flex Layout
+npm install --save @angular/flex-layout 
