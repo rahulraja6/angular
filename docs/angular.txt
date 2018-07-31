@@ -91,3 +91,31 @@ ng g c demo/flexbox --no-spec --dry-run
 
 Installing Flex Layout
 npm install --save @angular/flex-layout 
+
+Internal Store
+We dont expose our internal data store
+So we declare a behaviour subject tat our components subscribe to
+
+make the behaviour subject as a observable object 
+
+whenever we recieve data we publish to behaviour object and other components which listens will get the data
+Behaviour --> see and emit new  user list
+
+While loading an observable an async pipe is needed.
+
+ <a matLine href="#">{{ user.name }}</a>
+ 
+User Servie: for crud operations
+
+Services are datamodels which contains state we want to share
+
+Rest Endpoint for data set
+https://angular-material-api.azurewebsites.net/users
+
+
+
+Generate Service :
+ng g s contactmanager/services/user --no-spec
+
+Generate Class:
+ng g class contactmanager/models/user
